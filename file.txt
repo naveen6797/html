@@ -21,7 +21,7 @@ f = open(file_name, mode="r")
 <ul>
 <li>We can specify the mode while opening a file. In mode, we specify whether we want to read 'r', write 'w' or append 'a' to the file. We also specify if we want to open the file in text mode or binary mode.</li>
 <li>The default is reading in text mode. In this mode, we get strings when reading from the file.</li>
-<li>binary mode returns bytes and this is the mode to be used when dealing with non-text files like image or exe files.</li>
+<li>binary search mode returns bytes and this is the mode to be used when dealing with non-text files like image or exe files.</li>
 </ul>
 <h3>Python File Modes</h3>
 <ul>
