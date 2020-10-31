@@ -1,0 +1,46 @@
+<html>
+<style>
+p1 {color:green;}
+h3 {color:green;}
+</style>
+<body>
+<h1 style="background-color:DodgerBlue;">Modules</h1>
+<ul><li>module is a file consisting of python code and it's also runnable code.it can define function ,classes and variables.</li></ul>
+
+<h2 style="background-color:Tomato;">Create a module</h2>
+<ul><li>save the code file extension called <p1>.py</p1></li></ul>
+<h3>example</h3>
+<pre><p1>def</p1> function(name):
+     print("hello"+name)</pre>
+<ul><li>save this code file name call <p1>pavan.py</p1>
+<h2 style="background-color:Tomato;">Import statement</h2>
+<ul><li>we can use module by using <p1>import</p1> statement</li></ul>
+<h3>example</h3>
+<ul><li>Import the module named pavan, and call the function:</li></ul>
+<pre>import pavan
+     pavan.function("bro")
+output:
+hello bro</pre>
+<p1> When using a function from a module, use the syntax: module_name.function_name.</p1>
+<h2 style="background-color:Tomato;">Re-naming a Module</h2>
+<ul><li>You can create an alias when you import a module, by using the <p1>as</p1> keyword:</li></ul>
+<h3>example</h3>
+<ul><li>Create an alias for <p1>pavan</p1> called <p1>rsp</p1>:</ul></li>
+<pre>import pavan <p1>as</p1> rsp
+      rsp.function("world")
+output:
+hello world</pre>
+<h2 style="background-color:Tomato;">dir( ) Function</h1>
+<p>The dir() built-in function returns a sorted list of strings containing the names defined by a module.</p>
+<p>The list contains the names of all the modules, variables and functions that are defined in a module</p>
+<h3<example</h3>
+<pre>import pavan as rsp
+rsp.function("world")
+x=dir(rsp)
+print(x)
+output:
+['__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__', 'function']</pre>
+
+
+
+

@@ -1,0 +1,103 @@
+<html>
+<head>
+<style>
+h1{color: blue;}
+h2{color: green;}
+p3 {color: red;}
+
+</style>
+</head>
+<body>
+<h1>Variable namespace</h1>
+<ul><li>Namespace is a collection of names.</li>
+<li>In Python, you can imagine a namespace as a mapping of every name, you have defined, to corresponding objects.</li>
+<li>A namespace containing all the built-in names is created when we start the Python interpreter and exists as long we don't exit.</li>
+<li>This is the reason that built-in functions like , print() etc. are always available to us from any part of the program. Each module creates its own global namespace.</li>
+<li>Modules can have various functions and classes. A local namespace is created when a function is called, which has all the names defined in it. Similar, is the case with class.</li></ul>
+<h1>Variable Scope</h1>
+<ul><li>Although there are various unique namespaces defined, we may not be able to access all of them from every part of the program.</li>
+<li>Scope is the portion of the program from where a namespace can be accessed directly without any prefix.</li>
+<p>At any given moment, there are at least three nested scopes.</p><ol>
+<li>Scope of the current function which has local names</li><li>Scope of the module which has global names</li><li>Outermost scope which has built-in names</li>
+</ol><ul><li>When a reference is made inside a function, the name is searched in the local namespace, then in the global namespace and finally in the built-in namespace.</li></ul>
+<h2>Example</h2>
+<code><pre>
+def outer_function():
+
+    b = 20
+    
+    def inner_func():
+
+        c = 30
+
+
+a = 10</pre></code>
+<p>Here, the variable<p3> a</p3> is in the global namespace. Variable<p3> b </p3>is in the local namespace of <p3>outer_function()</p3> and <p3>c</p3> is in the nested local namespace of <p3>inner_function()</p3>.</p>
+<p>When we are in <p3>inner_function()</p3>,<p3> c</p3> is local to us,<p3> b</p3> is nonlocal and <p3>a</p3> is global. We can read as well as assign new values to<p3> c </p3>but can only read <p3>b</p3> and<p3> a</p3> from <p3>inner_function()</p3>.</p>
+
+<p>If we try to assign as a value to <p3>b</p3>, a new variable <p3>b</p3> is created in the local namespace which is different than the nonlocal<p3> b</p3>. Same thing happens when we assign a value to <p3>a</p3>.</p>
+
+<p>However, if we declare <p3>a</p3> as global, all the reference and assignment go to the global <p3>a</p3>. Similarly, if we want to rebind the variable <p3>b</p3>, it must be declared as nonlocal. The following example will further clarify this.</p>
+<h2>Example</h2>
+<code><pre>
+def outer_function():
+
+    a = 20
+    
+    def inner_function():
+
+    	a = 30
+
+    	print('a =',a)
+
+
+    
+	inner_function()
+
+   	print('a =',a)
+
+a = 10
+
+outer_function()
+
+print('a =',a)
+
+OUTPUT:
+a = 30
+a = 20
+a = 10
+</pre>
+</code>
+<p>In this program, three different variables a are defined in separate namespaces and accessed accordingly. While in the following program</p>
+<h2>Example</h2>
+<code><pre>
+def outer_function():
+
+    global a
+
+    a = 20
+
+    def inner_function():
+
+        global a
+
+        a = 30
+
+        print('a =',a)
+
+
+    inner_function()
+
+    print('a =',a)
+
+     
+a = 10
+
+outer_function()
+
+print('a =',a)
+
+OUTPUT:
+a = 30
+a = 30
+a = 30

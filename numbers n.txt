@@ -1,0 +1,84 @@
+<html>
+<body>
+<h1 style="background-color:DodgerBlue;">NUMBERS</h1>
+
+<ul>
+ <li>A number is a mathematical object used to count,measure and lable</li>
+<li>A programming language need to have support for numbers to carry out calculations</li>
+</ul>
+<h3>Numbers are three types</h3>
+<ol>
+  <li>integer</li>
+  <li>float</li>
+  <li>complex</li>
+</ol>
+<h2>integer</h2>
+<ul>
+<li>An integer is a number that can be written without a factorial component</li>
+<li>Number that do not have decimal places are called integers</li>
+<li>ex:-21,4,0 and -24,45 are integers</li>
+</ul>
+<h3>Example</h3>
+<pre>a =5
+print(type(a))
+#output:(class'int')
+</pre>
+<h2>float</h2>
+<ul>
+<li>floating point numbers are numbers that contain floating decimal points</li>
+<li>ex:-5.5,0.001,and -23.45 are floating point numbers</li>
+</ul>
+<h3>Example</h3>
+<pre>print(type(5.0))
+
+# output:(class'float')</pre>
+
+<h2>complex</h2>
+<ul>
+<li>A complex number is a numebr that can be expressed in the form of x+yj,where x is the real part and y is the imaginary part</li>
+<h3>example</h3>
+
+<pre>c = 5+3j
+
+print(c+3)
+
+# output(8+3j)
+
+<ul>
+<li>numbers we deal with everyday are decimal(base10)number system</li>
+<li>computer program need to work with binary(base 2),octal(base 8), hexadecimal(base 16)</li>
+<li>binary-> 0,1</li>
+<li>octal-> 0,1,2.....,7</li>
+<li>hexadecimal-> 0,1,...9,a,b,...f</li>
+</ul>
+<li>in python we can represent these numbers by appropriately placing a prefix before thet number</li>
+<h3>Number system prefix for python numbers</h3>
+<table>
+<tr>
+  <th>number system</th>
+  <th>prefix</th>
+</tr>
+<tr>
+  <td>binary</td>
+  <td>'0b'or'0B'</td>
+</tr>
+<tr>
+  <td>octal</td>
+  <td>'0o or '0O'</td>
+</tr>
+<tr>
+  <td>hexadecimal</td>
+  <td>'0x' or '0X'</td>
+</tr>
+</table>
+<h3>Example</h3>
+<pre>print(0b1101011)
+# output:107
+print(0o15)
+#output:13
+print(0xFB)
+#output:251
+
+ 
+<html>
+<body>

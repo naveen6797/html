@@ -1,0 +1,121 @@
+<html>
+<body>
+<h1 style="text-align:center;">input and output</h1>
+<h1 style="color:Tomato;">INPUT:input()</h1>
+<ul>
+<li>The input() function allows user input.</li>
+</ul>
+<p>input function first takes the input from the user and then evaluates the expression, which means Python automatically identifies whether user entered a string or a number or list. If the input provided is not correct then either syntax error or exception is raised by python.</p>
+<h2>Example</h2>
+<pre>
+<code>
+num = input("enter number")
+print(num)
+
+#output:
+enter number:123
+123
+</code>
+</pre>
+<h3>input function works in python:</h3>
+<ul>
+<li>When input() function executes program flow will be stopped until the user has given an input.</li>
+<li>Whatever you enter as input, input function convert it into a string. if you enter an integer value still input() function convert it into a string. You need to explicitly convert it into an integer in your code using typecasting.</li>
+</ul>
+<h3>Example 1 number:</h3>
+<pre>
+
+num = input ("Enter number :") 
+print(num)
+print ("type of number", type(num))
+
+#output:
+Enter number:23
+23
+<code>type of number (class 'int')</code>
+</pre>
+<h3>Example 2 name:</h3>
+<pre>
+<code>
+name = input("Enter name : ") 
+print(name1)
+print("type of name", type(name))
+
+#output:
+enter name:naveen
+naveen
+type of name (class 'str')
+</code>This
+</pre>
+<h1 style="color:blue;">OUTPUT:print()</h1>
+<p>The simplest way to produce output is using the print() function where you can pass zero or more expressions separated by commas.
+</p>
+<h2>Syntax:</h2>
+<ul>
+<li>print(value(s), sep= ‘ ‘, end = ‘\n’, file=file, flush=flush)</li>
+<h2>Parameters:</h2>
+<h3>Values:</h3>
+<ul>
+<li>Any value, and as many as you like. Will be converted to string before printed</li>
+</ul>
+<h3>sep='separator':</h3>
+<ul>
+<li>(Optional) Specify how to separate the objects, if there is more than one.Default :’ ‘</li>
+</ul>
+<h3>end='end':</h3>
+<ul>
+<li>(Optional) Specify what to print at the end.Default : ‘\n’</li>
+</ul>
+<h3>file:</h3>
+<ul>
+<li>(Optional) An object with a write method. Default :sys.stdout</li>
+</ul>
+<h3>flush:</h3>
+<ul>
+<li>(Optional) A Boolean, specifying if the output is flushed (True) or buffered (False). Default: False</li>
+</ul>
+<h2>Example:</h2>
+<pre>
+print("naveen mateti")
+#output:naveen mateti
+
+print("sai pavan", end="*")
+#output:sai pavan*
+
+print("my name is", "naveen mateti")
+#output:my name is naveen mateti
+
+print("my name is ", "naveen", sep="*")
+#output:my name is *naveen
+<h2>Output formatting:</h2>
+<p>There are several ways to present the output of a program, data can be printed in a human-readable form, or written to a file for future use. Sometimes user often wants more control the formatting of output than simply printing space-separated values. There are several ways to format output.</p>
+<ul>
+<li>To use formatted string literals, begin a string with f or F before the opening quotation mark or triple quotation mark.</li>
+<li>The str.format() method of strings help a user to get a fancier Output</li>
+<h2>Example:</h2>
+<pre>
+print('my name is {}.'.format("naveen"))
+#output:my name is naveen.
+
+n1 = "naveen"
+n2 = "pavan"
+print('we are {} and {}.'.format(n1, n2)
+#output:we are naveen and pavan.
+
+n1 = "naveen"
+n2 = "pavan"
+print('we are {1} and {0}.'.format(n1,n2))
+#output:we are pavan and naveen.
+
+print('we are {n3}, {n2} and {n1}.'.format(n1="naveen", n2="pavan", n3="raju"))
+#output:we are raju, pavan and naveen.
+
+
+
+
+
+
+
+
+
+

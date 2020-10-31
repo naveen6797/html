@@ -1,0 +1,62 @@
+<html>
+<body>
+<h1 style="color:Tomato;">DICTIONARIES</h1>
+<ul>
+ <li>Dictionary is an unordersd collection of items</li>
+ <li>while other compound datatypes have only value as on element</li>
+</ul>
+<h2>Create dictionary</h2>
+<pre>A dictionary is as simple as placingitems inside curly braces{},seperated by commas.
+An item has a key and the corresponding value expressed as a pair,key:value.
+keys must be immutable type and must be unique.
+</pre>
+<h3>Example:1</h3>
+<ol>
+  <li># empty dictionary</li>
+  <li>my_dictionary = {}</li>
+  <li>print(my_dict)</li>
+  <li>output: {}</li>
+</ol>
+<h3>Example:2</h3>
+<ol>
+  <li># dictionary with integer keys</li>
+  <li>my_dict = {1:"apple",2:"ball"}</li>
+  <li>print(my_dict)</li>
+  <li>output:{1:'apple',2:'ball'}</li>
+</ol>
+<h3>Example:3</h3>
+<ol>
+  <li>#dictionary with mixed keys</li>
+  <li>my_dict = {'name':'john', 1:[2,4,3]}</li>
+  <li>print(my_dict)</li>
+  <li>output:{'name':'john', 1:[2,4,3]}
+  
+</ol>
+<h2>Access dictionary elements</h2>
+<p>indexing is used other container types to access values,dictionary uses keys.</p>
+<p>key can be used either inside square brackets or with the get() method.</p>
+<h3>example:</h3>
+<ol>
+  <li>my_dict = {'name':'jack', 'age':26}</li>
+  <li>print(my_dict)</li>
+  <li>output: jack</li>
+  <li>print(my_dict.get('age')]</li>
+  <li>output: 26</li>
+<p>change or add elements in dictionary</p>
+<p>dictionaries are mutable. we can add new items or change the value of existing items using assignment operator</p>
+<p>if key is already present value gets updated,else a new key:value pair is added to the dictionaries</p>
+<h3>Example</h3>
+<ol>
+  <li>my_dict = {'name':'jack', 'age':26}</li>
+  <li>#update value</li>
+  <li>my_dict['age'] = 27</li>
+  <li>print(my_dict)</li>
+  <li>output: {'age':27,'name':'jack'}
+  <li>#add item</li>
+  <li>my_dict['address'] = 'warangal'
+  <li>print(my_dict)</li>
+  <li>output: {'address':'warangal', 'age':27, 'name':'jack'}</li>
+</ol>
+
+</body>
+</html>

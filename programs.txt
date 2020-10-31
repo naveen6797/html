@@ -1,0 +1,19 @@
+<html>
+<body>
+<h1>Even odd program using if statement<h1>
+<pre>
+<code>
+Number=5
+if(Number%2==0):
+     print('even number')
+elif(Number%2==1):
+     print('odd number')
+else:
+    print('others')
+     
+Output:
+	odd number
+
+#give number odd number so it prints odd number
+</pre>
+</code>

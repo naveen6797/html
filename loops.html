@@ -1,0 +1,236 @@
+﻿<html>
+<body style="background-color:powderblue;">
+<h1 style="color:blue;">loops in python</h1>
+<p>Python programming language provides following types of loops to handle looping requirements. <br>Python provides three ways for executing the loops.</br> While all the ways provide similar basic functionality, they differ in their syntax and condition checking time.</p>
+<h1>1.While loop</h1>
+<p>
+<li>while loop is used to execute a block of statements repeatedly until a given a condition is satisfied. And when the condition becomes false, the line immediately after the loop in program is executed.</li>
+</p>
+<h2>Syntax:</h2>
+<pre>
+whie expression:
+statement(s)</pre>
+<h2>example:</h2>
+<pre>
+<code>
+a = 0
+while(a<3):
+	a = a+1
+	print("naveen")
+</pre>
+</code>
+<h3>output:</h3>
+<pre>
+naveen
+naveen
+naveen
+</pre>
+<h3>Using else statement with while loops:</h3>
+<ul>
+<li> while loop executes the block until a condition is satisfied. When the condition becomes false, the statement immediately after the loop is executed.</li>
+<li>The else clause is only executed when your while condition becomes false. If you break out of the loop, it won’t be executed.</li>
+</ul>
+<h2>syntax:</h2>
+<pre>
+while condition:
+#excute this statements
+else:
+#excute this statements
+</pre>
+<h2>example:</h2>
+<pre>
+<code>
+a = 0
+while(a<3):
+	a = a+1
+	print("pavan")
+else:
+	print("else block")
+</code>
+</pre>
+<h3>output:</h3>
+<pre>
+pavan
+pavan
+pavan
+else 	block
+</pre>
+<h1>2.for loop</h1>
+<ul>
+<li> For loops are used for sequential traversal.</li>
+<li>For example: traversing a list or string or array etc. In Python</li>
+<li>It can be used to iterate over iterators and a range.</li>
+</ul>
+<h2>syntax:</h2>
+<pre>
+for iterator_var in sequence:
+statements(s)
+</pre>
+<h2>Example:</h2>
+<h3>list iteration</h3>
+<pre>
+<code>
+i = ["nani", "for", "loop"]
+for x in i:
+	print(i)
+#output:
+nani
+for
+loop
+</code>
+</pre>
+<h3>Tuple Iteration</h3>
+<pre>
+<code>
+i = ("nani", "for", "loop")
+for x in i:
+	print(x)
+#output:
+nani
+for
+loop
+</code>
+</pre>
+<h3>string Iteration</h3>
+<pre>
+<code>
+a = "raju"
+for b in a:
+	print(b)
+#output:
+r
+a
+j
+u
+</code>
+</pre>
+<h3>dictionary Iteration</h3>
+<pre>
+<code>
+d = dict()
+d[xyz] = 123
+d[abc] = 345
+for i in d:
+	print(i, d[i])
+#output:
+xyz 123
+abc 345
+</code>
+</pre>
+<h2>3.Iterating by index of sequences:</h2>
+<p>We can also use the index of elements in the sequence to iterate. The key idea is to first calculate the length of the list and in iterate over the sequence within the range of this length.</li>
+<h3>Example:</h3>
+<pre>
+</code>
+list = ["nani", "for", "loop"]
+for x in range(len(list)):
+	print list[x]
+#output:
+nani
+for
+loop
+</code>
+</pre>
+<h2>4.Using else statement with for loops: </h2>
+<p>We can also combine else statement with for loop like in while loop. But as there is no condition in for loop based on which the execution will terminate so the else block will be executed immediately after for block finishes execution.</p>
+<h3>Example</h3>
+<pre>
+<code>
+list = ["nani", "for", "loop"]
+for x in range(len(list)):
+	print(list[x])
+else:
+	print("else")
+#output:
+nani
+for
+loop
+else
+</code>
+</pre>
+<h2>Nested Loops:</h2>
+<p>Python programming language allows to use one loop inside another loop.</p>
+<h3>Syntax</h3>
+<pre>
+for iterator_var in sequence: 
+    for iterator_var in sequence: 
+        statements(s) 
+        statements(s)</pre>
+<li>The syntax for a nested while loop statement in Python programming language is as follows:</li>
+<pre>
+while expression: 
+    while expression:  
+        statement(s) 
+        statement(s) </pre>
+<h3<Example</he>
+<pre>
+for i in range(1, 5): 
+    for j in range(i): 
+         print(i, end=' ') 
+    print()
+#output:
+1
+2 2
+3 3 3
+4 4 4 4
+</pre>
+<h2>6.Loop Control Statements</h2>
+<p>Loop control statements change execution from its normal sequence. When execution leaves a scope, all automatic objects that were created in that scope are destroyed. </p>
+<ul>
+<li>continue statement:</li>
+<h3>Exmaple:</h3>
+<pre>
+for letter in 'geeksforgeeks':  
+    if letter == 'e' or letter == 's': 
+         continue
+    print 'Current Letter :', letter 
+#output:
+Current Letter : g
+Current Letter : k
+Current Letter : f
+Current Letter : o
+Current Letter : r
+Current Letter : g
+Current Letter : k</pre>
+</ul>
+<h3>Break Statement:</h3>
+<ul>
+<li>It brings control out of the loop</li>
+<h3>Example</h3>
+<pre>
+
+for letter in 'geeksforgeeks':  
+    if letter == 'e' or letter == 's': 
+         break
+  print('Current Letter :', letter)
+#output:
+e
+</pre>
+</ul>
+<h3>pass statement</h3>
+<li>We use pass statement to write empty loops. Pass is also used for empty control statement, function and classes.</li>
+<h3>Exampe</h3>
+<pre>
+for letter in 'geeksforgeeks': 
+    pass
+print('Last Letter :', letter)
+#output:
+s
+</pre>
+</body>
+</html>
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+

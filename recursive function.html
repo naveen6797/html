@@ -1,0 +1,63 @@
+﻿<html>
+<body>
+<h1 style="color:blue;">RECURSIVE FUNCTION</h1>
+<ul>
+<li>
+The process in which function calls itself one or more times in it's body.</li>
+<li>The corresponding function is called recursive function.</li>
+<li>It is returning the return value of this function.</li>
+<li>Using recursive algorithm certain problems can be solved quick early.</li>
+<li>A recursion can end up in on infinite loop, if the base case is not met in the calls.</li>
+<h3>Example:</h3>
+<ul>
+<li>
+# An example of a recursive function to
+ find the factorial of a number</li>
+</ul>
+<pre>
+<code>
+def factorial(x):
+
+    if x == 1:
+        return 1
+    x = x-1
+    return(x*factorial(x-1)
+num = 4
+print(num)
+</code>
+</pre>
+<ul>
+<li>When we call this function with a positive integer, it will recursively call itself by decreasing the number.</li>
+<li>Each function call multiples the number with the factorial of number 1 until the number is equal to one. This recursive call can be explained in the following steps.</li>
+</ul>
+<pre>
+<ol>
+<li>factorial(4)              # 1st call with 4</li>
+<li>4 * factorial(3)          # 2nd call with 3</li>
+<li>4 * 3 * factorial(2)      # 3rd call with 2</li>
+<li>4 * 3 * 2 * factorial(1)  # 4th call with 1</li>
+<li>4 * 3 * 2 * 1                  # return from 4th call as number=1</li>
+<li>4 * 3 * 2                      # return from 3rd call</li>
+<li>4 * 6                          # return from 2nd call</li>
+<li>24                             # return from 1st call</li>
+</ol>
+</pre>
+<ul>
+<li>Our recursion ends when the number reduces to 1. This is called the base condition</li>
+<li>Every recursive function must have a base condition that stops the recursion or else the function calls itself infinitely.</li>
+</ul>
+
+<h1 style="color:red;">RECURSION DEPTH</h1>
+<ul>
+<li>This is another recursion procedure which is the number of times the procedure is called recursively in the process of enlarging a given argument or arguments.</li>
+<li>if recursive call continues without reaching the base case then program never terminates.</li>
+<li>python supports maximum recursion depth as 1000 this can be modified according to user requirement.</li>
+<li>using sys.setrecursionlimit(500).</li>
+</ul>
+</body>
+</html>
+
+
+
+
+

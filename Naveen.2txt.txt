@@ -1,0 +1,65 @@
+I.WHAT IS RECURSION?
+
+* The process in which function calls itself one or more times in it's body.
+* The corresponding function is called recursive function.
+* It is returning the return value of this function.
+* Using recursive algorithm certain problems can be solved quick early.
+* A recursion can end up in on infinite loop, if the base case is not met in the calls.
+
+EXAMPLE 1:
+
+# PROGRAM STATEMENT:-
+* Solution to solve GCD in python.
+
+# Step to solve:-
+
+* Create function. select two variables(m,n)
+* Give condition (n==0)
+* Return the 'm' value
+* divisible two numbers i.e; (x=m%n)
+* return variables (n,x) to function
+* call the function
+* print our result
+* end the program.
+
+# ACTUAL PROGRAM:-
+
+def test(m,n):
+    if n == 0:
+       return m
+    x = m%n
+    return test(n,x)
+result = test(75,45)
+print(result)
+
+# EXPLANATION OF PROGRAM:-
+  
+  test(m,n)
+  m=75, n=45
+here x=m%n
+     x=30
+return test(n,x)
+  m=45,n=30
+      x=m%n
+      x=15
+return test(n,x)
+  m=30,n=15
+      x=m%n
+      x=0
+return test(n,x)
+
+here if condition is true so print our result.
+
+# RECURSION DEPTH:-
+
+* This is another recursion procedure which is the number of times the procedure is called recursively in the process of enlarging a given argument or arguments.
+* if recursive call continues without reaching the base case then program never terminates.
+* python supports maximum recursion depth as 1000 this can be modified according to user requirement.
+* using sys.setrecursionlimit(500).
+         
+                            ***END***
+
+
+
+
+ 

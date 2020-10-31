@@ -1,0 +1,20 @@
+<html>
+<head>
+<style>
+h1   {color: blue;}
+</style>
+</head>
+<body>
+
+<h1>Variable namespace<h1>
+<ul><li>Namespace is a collection of names.</li>
+<li>In Python, you can imagine a namespace as a mapping of every name, you have defined, to corresponding objects.</li>
+<li>A namespace containing all the built-in names is created when we start the Python interpreter and exists as long we don't exit.</li>
+<li>This is the reason that built-in functions like , print() etc. are always available to us from any part of the program. Each module creates its own global namespace.</li>
+<li>Modules can have various functions and classes. A local namespace is created when a function is called, which has all the names defined in it. Similar, is the case with class.</li></ul>
+<h1>Variable Scope</h1>
+<ul><li>Although there are various unique namespaces defined, we may not be able to access all of them from every part of the program.</li>
+<li>Scope is the portion of the program from where a namespace can be accessed directly without any prefix.</li><li>
+
+
+
